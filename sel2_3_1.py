@@ -7,6 +7,7 @@ import math
 link = 'http://suninjuly.github.io/alert_accept.html'
 
 try: 
+
     browser = webdriver.Chrome()
     browser.get(link)
     
@@ -28,4 +29,5 @@ try:
 finally:
 
     time.sleep(9)
+
     browser.quit()

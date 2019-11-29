@@ -7,6 +7,7 @@ import math
 link = 'http://suninjuly.github.io/redirect_accept.html'
 
 try: 
+
     browser = webdriver.Chrome()
     browser.get(link)
     
@@ -16,6 +17,7 @@ try:
    
     value = browser.find_element_by_id('input_value').text
     new_value = str(math.log(abs(12*math.sin(int(value)))))
+
     browser.find_element_by_id('answer').send_keys(new_value)
     browser.find_element_by_class_name('btn').click()
     
