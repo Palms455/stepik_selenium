@@ -4,7 +4,7 @@ import math
 
 
 link = 'http://suninjuly.github.io/get_attribute.html'
-def calcul(x):
+def calculate(x):
     return str(math.log(abs(12*math.sin(int(x)))))
     
     
@@ -15,7 +15,7 @@ try:
 
     sunduk = browser.find_element_by_id('treasure')
     x = sunduk.get_attribute('valuex')
-    y = calcul(x)
+    y = calculate(x)
     
     input1 = browser.find_element_by_id('answer')
     input1.send_keys(y)

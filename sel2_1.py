@@ -17,6 +17,7 @@ try:
     x = x_element.text
     y = calcul(x)
     input1 = browser.find_element_by_id('answer')
+
     input1.send_keys(y)
     
     input2 = browser.find_element_by_css_selector('[for="robotCheckbox"]')
@@ -33,4 +34,7 @@ try:
 finally:
     
     time.sleep(9)
+
     browser.quit()
+
+
