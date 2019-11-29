@@ -11,9 +11,9 @@ try:
     browser.get(link)
     time.sleep(5)
     user = browser.find_element_by_css_selector('[name="username"]')
-    user.send_keys('+79656655587')
+    user.send_keys(input('email or number phone'))
     passw = browser.find_element_by_css_selector('[name="password"]')
-    passw.send_keys('FedukBaduk2403155')
+    passw.send_keys(str(input('password')))
     enter = browser.find_element_by_css_selector('[type="submit"]').click()
     time.sleep(10)
     while True:
@@ -31,4 +31,6 @@ try:
         i += 1
 finally:
     pass
+
+
     
