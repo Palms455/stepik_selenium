@@ -15,6 +15,7 @@ try:
     val0 = browser.find_element_by_id('num2')
     val2 = val0.text
     print(val2)
+
     print(val1)
     summ = int(val1) + int(val2)
     select = Select(browser.find_element_by_css_selector('select#dropdown'))
@@ -24,4 +25,5 @@ try:
 finally:
 
     time.sleep(9)
+
     browser.quit()
